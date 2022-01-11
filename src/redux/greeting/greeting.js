@@ -4,7 +4,6 @@ const GET_GREETING = 'redux/greeting/GET_GREETING';
 
 const getGreeting = () => async (dispatch) => {
   const { data } = await axios.get('http://localhost:3000/v1/greetings');
-  console.log(data.greeting.message);
 
   dispatch({ type: GET_GREETING, payload: data.greeting.message });
 };

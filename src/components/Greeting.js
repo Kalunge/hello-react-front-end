@@ -10,7 +10,6 @@ const Greeting = () => {
   }, [dispatch]);
 
   const { message } = useSelector((state) => state.greetingReducer);
-  console.log(message);
 
   const generateGreeting = () => {
     dispatch(getGreeting());
