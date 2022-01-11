@@ -19,7 +19,7 @@ const Greeting = () => {
     <div>
       <h2>{message}</h2>
       <button type="button" onClick={generateGreeting}>
-        Generate another random greeting
+        Generate another random greeting from rails
       </button>
     </div>
   );
